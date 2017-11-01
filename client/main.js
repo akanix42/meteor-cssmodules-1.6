@@ -1,9 +1,6 @@
-import React from 'react'
 import { render } from 'react-dom'
-
-import styles from '/imports/app.css'
-
-const App = () => <div className={styles.app}> hey</div>
+import React from 'react'
+import App from '/imports/app.jsx'
 
 Meteor.startup(() => {
   render(<App />, document.getElementById('app'))
